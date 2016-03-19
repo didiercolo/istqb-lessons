@@ -20,8 +20,470 @@
     </section>
 
     <section class="main-content">
-      <h3>
-<a id="welcome-to-isqtb-lessons" class="anchor" href="#welcome-to-isqtb-lessons" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to ISQTB Lessons.</h3>
+ <!-- Start Markdown Code  -->
+
+<h1 id="toc_0">Capitulo 1</h1>
+
+<h3 id="toc_1">Terminos</h3>
+
+<table>
+<thead>
+<tr>
+<th>Bug</th>
+<th>Defecto</th>
+<th>Error</th>
+<th>Fallo</th>
+<th>Calidad</th>
+<th>Riesgo</th>
+</tr>
+</thead>
+
+<tbody>
+</tbody>
+</table>
+
+<hr>
+
+<blockquote>
+<p><strong>Error</strong>:</p>
+
+<blockquote>
+<p>Accion Humana que produce un resultado incorrecto ( IEEE 610 )</p>
+</blockquote>
+
+<p><strong>Defecto</strong>:</p>
+
+<blockquote>
+<p>Componente que puede causar el fallo en el desempeño de las funciones requeridas</p>
+</blockquote>
+
+<p><strong>Fallo</strong>:</p>
+
+<blockquote>
+<p>Manifestacion fisica o funcional de un defecto</p>
+</blockquote>
+</blockquote>
+
+<hr>
+
+<h2 id="toc_2">Papel del proceso de pruebas</h2>
+
+<ul>
+<li>Mejora la calidad del producto de Software</li>
+<li>Reduce el riesgo de detectar errores</li>
+<li>Permite satisfacer compromisos
+
+<ul>
+<li>Dado que puede ser requisito obligatorio por parte del cliente</li>
+</ul></li>
+</ul>
+
+<blockquote>
+<h2 id="toc_3"><em>La deteccion de defectos en etapas tempranas permite minimizar el costo de los mismos</em> </h2>
+</blockquote>
+
+<hr>
+
+<div><pre><code class="language-none">Software: Programa de ordenador, procedimientos, documentacion y datos de un sistema basado en un ordenador. (IEEE 610)</code></pre></div>
+
+<div><pre><code class="language-none">Calidad de software: La totalidad de la funcionalidad y prestaciones de un producto software que contribuyen con su capacidad de satiscacer necesidades explicitas o implicitas.(ISO/IEC 9126)</code></pre></div>
+
+<div><pre><code class="language-none">Calidad: Grado en el cual un componente, sisetma o porceso satisface requisitos especificados o necesidades y expectativas del usuario. (IEEE Std 610)</code></pre></div>
+
+<hr>
+
+<h1 id="toc_4">Tipos de pruebas ( <em>ISO 9126</em> )</h1>
+
+<ul>
+<li><strong>Funcionales</strong>
+
+<ul>
+<li>Funcionalidad<br></li>
+</ul></li>
+<li><strong>No Funcionales</strong>
+
+<ul>
+<li>Fiabilidad</li>
+<li>Usabilidad</li>
+<li>Eficiencia</li>
+<li>Mantenibilidad</li>
+<li>Portabilidad<br></li>
+</ul></li>
+</ul>
+
+<hr>
+
+<p>La norma <strong>ISO 2501</strong> añade dos atributos mas:</p>
+
+<ul>
+<li>Compatibilidad</li>
+<li>Seguridad
+
+<ul>
+<li>Integridad</li>
+<li>Disponibilidad</li>
+<li>Accesibilidad</li>
+</ul></li>
+</ul>
+
+<hr>
+
+<h1 id="toc_5">Tipos de Aseguramiento de la calidad</h1>
+
+<h2 id="toc_6">QA Constructivo - Gestion de calidad</h2>
+
+<div><pre><code class="language-none"> Tiene como objetivo prevenir defectos</code></pre></div>
+
+<p><strong>Consigna del QA constructivo</strong></p>
+
+<ul>
+<li>Los defectos evitados no requieren ser reparados</li>
+<li>Los defectos introducidos en el pasado no deben ser repetidos</li>
+<li><p>Prevenir defectos</p>
+
+<ul>
+<li><p><strong>Organizacion</strong></p>
+
+<ul>
+<li>Guias </li>
+<li>Estandares</li>
+<li>Listas de comprobación</li>
+<li>Reglas de procesos y normas</li>
+<li>Requisitos legales</li>
+</ul></li>
+<li><p><strong>Técnico</strong></p>
+
+<ul>
+<li>Metodos </li>
+<li>Herramientas</li>
+<li>Lenguages</li>
+<li>Listas / plantillas</li>
+<li>Entornos de Desarrollo Integrado (IDE)</li>
+</ul></li>
+</ul></li>
+</ul>
+
+<h2 id="toc_7">QA Analitico - Verificacion y pruebas</h2>
+
+<div><pre><code class="language-none">Tiene como objectivo detectar defectos</code></pre></div>
+
+<p><strong>Consigna del QA analitco</strong></p>
+
+<ul>
+<li>Los defectos deben ser detectados tan pronto como sea posible</li>
+</ul>
+
+<h4 id="toc_8">Tipos de QA analitico</h4>
+
+<ul>
+<li><p><strong>Estatico</strong>: Son llevadas a cabo sin la ejecucion del programa</p>
+
+<ul>
+<li>Revisiones / revisiones guidadas</li>
+<li>Analisis del flujo de control</li>
+<li>Analisis del fluoj de datos</li>
+<li>Metricas de compilador / analizador<br></li>
+</ul></li>
+<li><p><strong>Dinamico</strong>: Se necesita la ejecucion del programa.</p>
+
+<ul>
+<li><p><strong>Caja Negra - Pruebas de Especificación</strong></p>
+
+<ul>
+<li>Particiones equivalencia</li>
+<li>Analisis de valores limite</li>
+<li>Tabla de decision</li>
+<li>Pruebas de transicion de estado</li>
+<li>Analisis de caso de uso </li>
+</ul></li>
+<li><p><strong>Caja Blanca - Pruebas estructurales - Pruebas basadas en el flujo de control</strong></p>
+
+<ul>
+<li>Cobertura de sentencia</li>
+<li>Cobertura de Rama</li>
+<li>Cobertura de condicion</li>
+<li>Cobertura de camino</li>
+</ul></li>
+</ul></li>
+</ul>
+
+<hr>
+
+<h1 id="toc_9">Objectivos de las pruebas</h1>
+
+<ul>
+<li>Generar confianza con respecto a la calidad</li>
+<li>Generar informacion para la toma de decisiones</li>
+<li>Detectar defectos - Adquirir conocimientos sobre los defectos del objeto de prueba</li>
+<li>Confirmacion de la funcionalidad</li>
+<li>Prevencion de Defectos</li>
+</ul>
+
+<hr>
+
+<h3 id="toc_10">- Criterios de salida</h3>
+
+<ul>
+<li>No encontrar mas defectos</li>
+<li>Pruebas basadas en riesgos</li>
+<li>Pruebas basadas en tiempo y presupuesto</li>
+</ul>
+
+<h3 id="toc_11">- Casos de prueba</h3>
+
+<p>Un buen caso de prueba debe contener las siguientes secciones(<strong>Estandar IEEE 829</strong>)</p>
+
+<ul>
+<li>Precondiciones</li>
+<li>Valores de entrada</li>
+<li>Resultados Esperados</li>
+<li>Poscondiciones</li>
+<li>Un Identificador</li>
+<li>Dependencias con otros test cases</li>
+<li>Referencia al requisito probado</li>
+<li>Prioridad</li>
+<li>Forma de ejecutar la prueba, pasos para ejecutarla</li>
+</ul>
+
+<h3 id="toc_12">-  Base de Pruebas</h3>
+
+<p>Conjunto de documentos que definen los requisitos del objeto de prueba</p>
+
+<hr>
+
+<h1 id="toc_13">Actividades de Proceso de pruebas</h1>
+
+<div><pre><code class="language-none">Cada fase del proceso de pruebas es concurrente con las fases del proceso de desarrollo</code></pre></div>
+
+<ul>
+<li>Planeacion y control</li>
+<li>Seleccion de condiciones de prueba</li>
+<li>Diseño y ejecucion de pruebas</li>
+<li>Comprobacion de resultados</li>
+<li>Generacion de informes</li>
+<li>Finalizacion y actividades de cierre</li>
+</ul>
+
+<hr>
+
+<ul>
+<li>Planeacion y control </li>
+<li>Analisis y diseño de pruebas</li>
+<li>Implementacion y ejecucion de pruebas</li>
+<li>Evaluacion de resultados y genracion de informes - Evaluacion de criterios de salida e informes</li>
+<li>Actividades de cierre de pruebas</li>
+</ul>
+
+<hr>
+
+<h2 id="toc_14">- Planeacion y control</h2>
+
+<h3 id="toc_15">Planeacion</h3>
+
+<p>Define los objectivos de las pruebas y la especificacion de las actividades de prueba</p>
+
+<p><strong>Objetivos</strong></p>
+
+<ul>
+<li>Determinar el alcance</li>
+<li>Identificar los objectivos de las pruebas y criterios de salida</li>
+<li>Determinar el enfoque de la prueba</li>
+<li>Implementar el metodo de prueba / Estrategia de pruebas </li>
+<li>Manejar los recursos necesarios para las pruebas. personal, entorno de prueba, presupuestos</li>
+</ul>
+
+<h3 id="toc_16">Control</h3>
+
+<p>Es una actividad constante que verifica el avance real con respecto a lo planeado, informa sobre desviaciones e implica la adopcion de medidas para cumplir los objetivos planeados.
+Dado al control se puede cambiar el <strong>plan maestro de pruebas ( Master Test Plan - Test Plan)</strong> para adecuarlo a las necesidades</p>
+
+<blockquote>
+<p><strong>Plan maestro de pruebas - Master Test Plan - Test Plan</strong></p>
+
+<blockquote>
+<p>Documento que define los alcances, el enfoque, los recursos, el calendario de actividades, los items que se van a probar y los que no se van a probar </p>
+</blockquote>
+
+<p><strong>Estrategia de pruebas - Test Strategy</strong></p>
+
+<blockquote>
+<p>Escripcion a alto nivel de los <strong>niveles de prueba</strong> y las pruebas asociadas a ellos</p>
+</blockquote>
+
+<p><strong>Enfoque de Pruebas - Test approach</strong></p>
+
+<blockquote>
+<p>Es la implementacion de de la estrategia de pruebas para un proyecto en especifico. Contiene las decisiones tomadas para cada objectivo, analisis del riesgo, puntos de inicio del proceso de prueba, tecnicas del diseño de prueba, criterios de salida y tipo de prueba a ejecutar</p>
+</blockquote>
+
+<p><strong>Criterios de salida</strong></p>
+
+<blockquote>
+<p>Conjunto de condiciones definidas que permiten establecer que una tarea en especifico esta concluida</p>
+</blockquote>
+</blockquote>
+
+<h2 id="toc_17">- Analisis y diseño de pruebas</h2>
+
+<p>Tiene como finalidad convertir los objectivos de las pruebas en casos de prueba</p>
+
+<p><strong>Tareas principales</strong></p>
+
+<ul>
+<li>Analizar la base de prueba</li>
+<li>Analizar la testeabilidad </li>
+<li>Identificar y priorizar las condiciones de prueba</li>
+<li>Disenar y priorizar casos de prueba y condiciones de prueba a alto nivel</li>
+<li>Identificar los datos de prueba para los casos de prueba - (test data)</li>
+<li>Diseñar la configuracion del entorno de pruebas (ambiente de pruebas - cama de pruebas (test-bed)) - Infraestructura, herramientas de prueba</li>
+<li>Crear la trazabiidad entre los casos de prueba y la base de prueba (requerimientos) </li>
+</ul>
+
+<blockquote>
+<p><strong>Datos de prueba</strong></p>
+
+<blockquote>
+<p>Datos que necesita una prueba para ser ejecutada</p>
+</blockquote>
+
+<p><strong>Datos de entrada</strong></p>
+
+<blockquote>
+<p>Parametro de entrada que toma una componente para ejecutarse</p>
+</blockquote>
+
+<p><strong>Cobertura de pruebas</strong></p>
+
+<blockquote>
+<p>Porcentaje de codigo probado por el set de pruebas</p>
+</blockquote>
+
+<p><strong>Oraculo de pruebas - Test oracle</strong></p>
+
+<blockquote>
+<p>Fuente que permite comprarar resultados anteriores con los obtenidos durante las pruebas</p>
+</blockquote>
+</blockquote>
+
+<hr>
+
+<hr>
+
+<h2 id="toc_18">Terminos de desarrollo de software</h2>
+
+<blockquote>
+<p><strong>Depuracion</strong>:</p>
+
+<blockquote>
+<p>Proceso de encontrar,analizar y solucionar el defecto  </p>
+</blockquote>
+
+<p><strong>Requisito</strong>:</p>
+
+<blockquote>
+<p>Condicion o capacidad necesario sistema cumpla con lo establecido</p>
+</blockquote>
+
+<p><strong>Revision</strong>:</p>
+
+<blockquote>
+<p>Evaluacion de un producto o estado de un proyecto para detectar diferencias con los resultados planificados.</p>
+</blockquote>
+</blockquote>
+
+<hr>
+
+<h3 id="toc_19">Depuracion</h3>
+
+<p>La depuracion consiste en:</p>
+
+<ul>
+<li>Encontrar la raiz del defecto</li>
+<li>Corregir el defecto<br></li>
+</ul>
+
+<p>Las pruebas y depuracion tienen el siguiente flujo:</p>
+
+<div><pre><code class="language-none">Prueba -&gt; Depuracion[Encontrar la causa raiz - Corregir defecto] -&gt; Re Test </code></pre></div>
+
+<hr>
+
+<h1 id="toc_20">Principios del proceso de prueba</h1>
+
+<ul>
+<li><strong>El proceso de pruebas demuestra la presencia de defectos</strong>
+
+<ul>
+<li> No detecta la ausencia de los mismos</li>
+</ul></li>
+<li><strong>Las pruebas exaustivas no existen</strong>
+
+<ul>
+<li>Solo en casos triviales, por lo que se debe realizar un analisis de riesgo y prioridades</li>
+<li>Genera una explocion de casos de prueba</li>
+<li>Por lo que se toma una <strong>Prueba de Muestra(Sample Test)</strong>,que es un subconjunto de todos los posibles valores de entrada</li>
+</ul></li>
+<li><strong>Pruebas Tempranas</strong>
+
+<ul>
+<li>Cuanto mas rapido se encuentre un defecto menor es el costo de correccion. </li>
+<li>La preparacion de la prueba tambien consume tiempo</li>
+</ul></li>
+<li><strong>Agrupacion de defectos</strong> 
+
+<ul>
+<li>   Donde se encontro un defecto es muy probable que si se sigue probando se contraran mas defectos</li>
+</ul></li>
+<li><strong>Paradoja del Pesticida</strong>
+
+<ul>
+<li>La repeticon de las mismas pruebas con los mismos valores de entrada no van a encontrar mas errores</li>
+<li>Las pruebas deben ser evaluadas constantemente</li>
+</ul></li>
+<li><strong>Las pruebas dependen del contexto</strong> 
+
+<ul>
+<li>Todo depende de lo que se vaya a probar, no es lo mismo probar un software bancario a probar un sitio web</li>
+</ul></li>
+<li><strong>La falasia de aunsencia de errores</strong>
+
+<ul>
+<li>El proceso de prueba encontrara los fallos mas importantes del objeto de prueba, pero talvez no los encuentre todos<br></li>
+</ul></li>
+</ul>
+
+<h1 id="toc_21">Psicologia del proceso de pruebas</h1>
+
+<p>Dev es Constructivo
+QA es Destructivo</p>
+
+<div><pre><code class="language-none">Las pruebas independientes se pueden realizar en cualquier 
+nivel de proceso de pruebas</code></pre></div>
+
+<h1 id="toc_22">Niveles de prueba</h1>
+
+<ul>
+<li>Desarrollador hace sus pruebas</li>
+<li>Otro miembro del equipo de desarrollo ejecuta las pruebas sobre el codigo de un compañero</li>
+<li>Un equipo de QA dedicado dentro de la compañia ejecuta las pruebas</li>
+<li>Un exipo de QA externo a la compañia ejecuta las prueba - El principal inconveniente de este es que como son externos no se tiene conocimiento total del sistema, por lo que se recomienda introducirlos al proyecto lo mas tempranamente posible para que adquieran el background necesario.</li>
+</ul>
+
+<h1 id="toc_23">Codigo deontologico</h1>
+
+<ul>
+<li>Publico - Actuar en coherencia con el interes publico</li>
+<li>Cliente y emprendedor - Actual con el mejor interes hacia su cliente y emprendedor</li>
+<li>Producto - El producto en que se trabaja cuenta con los mejores estandares profesionales</li>
+<li>Criterio - Mantendran la integridad e indenpencia de su criterio profesional</li>
+<li>Gestion - Se debe fomentar el enfoque etico en la gestion de pruebas</li>
+<li>Profesion - Se aumentara y fomentara la reputacion de la profesion </li>
+<li>Companeros - Se fomentara y apoyara la relacion con sus compañeros</li>
+<li>Nivel individual - Participar en el aumento de conociemiento y fomentaran     el enfoque etico de la profesion1</li>
+</ul>
+
+
+<!-- End Markdown Code  -->
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/didiercolo/istqb-lessons">Istqb-lessons</a> is maintained by <a href="https://github.com/didiercolo">didiercolo</a>.</span>
